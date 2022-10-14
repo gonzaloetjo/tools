@@ -1,0 +1,99 @@
+[all]
+# Masters
+tsgfy3uf ansible_host=10.130.164.202
+tsgfy3ug ansible_host=10.130.164.203
+tsgfy3uh ansible_host=10.130.164.204
+# Edge
+tsgfy3ud ansible_host=10.130.164.200
+# Master Infra
+tsgfy3ue ansible_host=10.130.164.201
+# Workers
+tsgfy3ui ansible_host=10.130.164.205
+tsgfy3uj ansible_host=10.130.164.206
+tsgfy3uk ansible_host=10.130.164.207
+tsgfy3ul ansible_host=10.130.164.208
+
+[edge]
+tsgfy3ud
+
+[zk]
+tsgfy3uf
+tsgfy3ug
+tsgfy3uh
+
+[hdfs_nn]
+tsgfy3uf
+tsgfy3ug
+
+[hdfs_jn]
+tsgfy3uf
+tsgfy3ug
+tsgfy3uh
+
+[hdfs_dn]
+tsgfy3ui
+tsgfy3uj
+tsgfy3uk
+tsgfy3ul
+
+[yarn_rm]
+tsgfy3uf
+tsgfy3ug
+
+[yarn_nm]
+tsgfy3ui
+tsgfy3uj
+tsgfy3uk
+tsgfy3ul
+
+[yarn_ats]
+tsgfy3uf
+tsgfy3ug
+
+[hadoop_client]
+tsgfy3ud
+tsgfy3uf
+tsgfy3ug
+tsgfy3uh
+
+[hive_s2]
+tsgfy3ug
+tsgfy3uh
+
+[hive_client]
+tsgfy3ud
+
+[hbase_master]
+tsgfy3uf
+tsgfy3ug
+
+[hbase_rs]
+tsgfy3ui
+tsgfy3uj
+tsgfy3uk
+tsgfy3ul
+
+[hbase_rest]
+tsgfy3uh
+
+[hbase_client]
+tsgfy3ud
+
+[phoenix_queryserver_daemon]
+tsgfy3uh
+
+[phoenix_queryserver_client]
+tsgfy3ud
+
+[postgresql]
+tsgfy3ug
+
+[ranger_admin]
+tsgfy3ug
+
+[spark_hs]
+tsgfy3uf
+
+[spark_client]
+tsgfy3ud
+

@@ -1,0 +1,99 @@
+[all]
+# Masters
+master1 ansible_host=10.130.164.202
+master2 ansible_host=10.130.164.203
+master3 ansible_host=10.130.164.204
+# Edge
+edge ansible_host=10.130.164.200
+# Master Infra
+infra ansible_host=10.130.164.201
+# Workers
+worker1 ansible_host=10.130.164.205
+worker2 ansible_host=10.130.164.206
+worker3 ansible_host=10.130.164.207
+worker3 ansible_host=10.130.164.208
+
+[edge]
+edge
+
+[zk]
+master1
+master2
+master3
+
+[hdfs_nn]
+master1
+master2
+
+[hdfs_jn]
+master1
+master2
+master3
+
+[hdfs_dn]
+worker1
+worker2
+worker3
+worker3
+
+[yarn_rm]
+master1
+master2
+
+[yarn_nm]
+worker1
+worker2
+worker3
+worker3
+
+[yarn_ats]
+master1
+master2
+
+[hadoop_client]
+edge
+master1
+master2
+master3
+
+[hive_s2]
+master2
+master3
+
+[hive_client]
+edge
+
+[hbase_master]
+master1
+master2
+
+[hbase_rs]
+worker1
+worker2
+worker3
+worker3
+
+[hbase_rest]
+master3
+
+[hbase_client]
+edge
+
+[phoenix_queryserver_daemon]
+master3
+
+[phoenix_queryserver_client]
+edge
+
+[postgresql]
+master2
+
+[ranger_admin]
+master2
+
+[spark_hs]
+master1
+
+[spark_client]
+edge
+
