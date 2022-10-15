@@ -31,6 +31,7 @@
 
 - name: hive_client_config
   depends_on:
+    - tdp-cluster_config
     - hdfs_client_config
     - yarn_client_config
     - hive_kerberos_install
@@ -38,6 +39,7 @@
 
 - name: hive_metastore_config
   depends_on:
+    - tdp-cluster_config
     - zookeeper_config
     - hadoop_client_config
     - hive_kerberos_install
@@ -45,6 +47,7 @@
 
 - name: hive_hiveserver2_config
   depends_on:
+    - tdp-cluster_config
     - ranger_admin_config
     - zookeeper_config
     - hadoop_client_config
@@ -54,6 +57,7 @@
 
 - name: hive_ranger_config
   depends_on:
+    - tdp-cluster_config
     - hive_ranger_install
     - hive_hiveserver2_config
 

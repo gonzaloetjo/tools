@@ -16,6 +16,7 @@
 
 - name: ranger_admin_config
   depends_on:
+    - tdp-cluster_config
     - hadoop_client_config
     - ranger_kerberos_install
     - ranger_ssl-tls_install
@@ -31,7 +32,7 @@
 
 - name: ranger_install
   noop: yes
-  depends_on:
+  depends_on:`
     - ranger_admin_install
     - ranger_kerberos_install
     - ranger_ssl-tls_install

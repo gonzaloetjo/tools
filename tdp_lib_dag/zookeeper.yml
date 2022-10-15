@@ -15,10 +15,12 @@
 
 - name: zookeeper_server_config
   depends_on:
+    - tdp-cluster_config
     - zookeeper_kerberos_install
 
 - name: zookeeper_client_config
   depends_on:
+    - tdp-cluster_config
     - zookeeper_kerberos_install
 
 - name: zookeeper_server_start

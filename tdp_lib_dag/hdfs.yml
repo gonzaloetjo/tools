@@ -38,6 +38,7 @@
 
 - name: hdfs_namenode_config
   depends_on:
+    - tdp-cluster_config
     - ranger_admin_config
     - zookeeper_config
     - hadoop_client_config
@@ -46,24 +47,28 @@
 
 - name: hdfs_datanode_config
   depends_on:
+    - tdp-cluster_config
     - hadoop_client_config
     - hdfs_kerberos_install
     - hdfs_ssl-tls_install
 
 - name: hdfs_journalnode_config
   depends_on:
+    - tdp-cluster_config
     - hadoop_client_config
     - hdfs_kerberos_install
     - hdfs_ssl-tls_install
 
 - name: hdfs_ranger_config
   depends_on:
+    - tdp-cluster_config
     - ranger_admin_config
     - hdfs_ranger_install
     - hdfs_namenode_config
 
 - name: hdfs_client_config
   depends_on:
+    - tdp-cluster_config
     - hadoop_client_config
     - hdfs_namenode_config
     - hdfs_datanode_config
